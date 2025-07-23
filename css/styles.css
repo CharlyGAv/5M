@@ -1,0 +1,129 @@
+/* Estilos para la tarjeta de 240x360 píxeles */
+body {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(135deg, #fde7f0, #f8d2e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    width: 240px;
+    height: 360px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    color: #d33682;
+    margin: 5px 0 10px 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.flower-container {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 0;
+}
+
+#growth-flower {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.growth-narrative {
+    font-size: 0.7em;
+    color: #886a74;
+    margin: 5px 0 0 0;
+    text-align: center;
+    height: 20px;
+    font-style: italic;
+}
+
+.message {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 0.5em;
+    color: #5c4747;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+    font-style: italic;
+    padding: 0 3px;
+    max-width: 95%;
+}
+
+.quote p {
+    margin: 0 0 4px 0;
+    text-align: center;
+    padding: 0 1px;
+    width: 100%;
+}
+
+.quote p:last-child {
+    margin-bottom: 3px;
+}
+
+.emoji {
+    font-size: 1em;
+    margin: 2px auto 0;
+    animation: fadeInText 1s forwards;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+footer {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.signature {
+    font-size: 0.6em;
+    color: #d33682;
+    margin: 3px 0 0 0;
+    letter-spacing: 0.5px;
+}
+
+/* Animaciones */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el SVG */
+#growth-flower path, #growth-flower ellipse, #growth-flower g {
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}

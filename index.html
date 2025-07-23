@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florecer a Su Ritmo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h1 class="title">Como una rosa, lo bonito florece a su tiempo</h1>
+        </header>
+        
+        <div class="flower-container">
+            <svg id="growth-flower" width="180" height="180" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+                <g>
+                    <path id="stem" d="M200 580 C 200 480, 180 380, 200 370" stroke="#388e3c" stroke-width="8" fill="none" stroke-linecap="round" style="opacity:0;"/>
+                    <g id="leaf1" style="opacity:0;">
+                        <path d="M200 480 C 170 470, 150 490, 160 520" fill="#66bb6a"/>
+                    </g>
+                    <g id="leaf2" style="opacity:0;">
+                        <path d="M200 450 C 230 440, 250 460, 240 490" fill="#66bb6a"/>
+                    </g>
+                    <ellipse id="bud" cx="200" cy="360" rx="0" ry="0" fill="#e57373" style="opacity:0;"/>
+                    <g id="petals" style="opacity:0;">
+                        <!-- Capa exterior de pétalos (más grandes) -->
+                        <path d="M200,360 C170,330 180,290 200,290 C220,290 230,330 200,360" fill="#f48fb1" transform="rotate(0, 200, 360)"/>
+                        <path d="M200,360 C170,330 180,290 200,290 C220,290 230,330 200,360" fill="#f48fb1" transform="rotate(72, 200, 360)"/>
+                        <path d="M200,360 C170,330 180,290 200,290 C220,290 230,330 200,360" fill="#f48fb1" transform="rotate(144, 200, 360)"/>
+                        <path d="M200,360 C170,330 180,290 200,290 C220,290 230,330 200,360" fill="#f48fb1" transform="rotate(216, 200, 360)"/>
+                        <path d="M200,360 C170,330 180,290 200,290 C220,290 230,330 200,360" fill="#f48fb1" transform="rotate(288, 200, 360)"/>
+                        
+                        <!-- Capa interior de pétalos (más pequeños y claros) -->
+                        <path d="M200,360 C185,340 190,315 200,315 C210,315 215,340 200,360" fill="#f8bbd0" transform="rotate(36, 200, 360)"/>
+                        <path d="M200,360 C185,340 190,315 200,315 C210,315 215,340 200,360" fill="#f8bbd0" transform="rotate(108, 200, 360)"/>
+                        <path d="M200,360 C185,340 190,315 200,315 C210,315 215,340 200,360" fill="#f8bbd0" transform="rotate(180, 200, 360)"/>
+                        <path d="M200,360 C185,340 190,315 200,315 C210,315 215,340 200,360" fill="#f8bbd0" transform="rotate(252, 200, 360)"/>
+                        <path d="M200,360 C185,340 190,315 200,315 C210,315 215,340 200,360" fill="#f8bbd0" transform="rotate(324, 200, 360)"/>
+
+                        <!-- Centro de la flor -->
+                        <circle cx="200" cy="360" r="12" fill="#ffeb3b"/>
+                    </g>
+                </g>
+            </svg>
+            <p id="growth-narrative" class="growth-narrative"></p>
+        </div>
+        
+        <div class="message">
+            <div class="quote">
+                <p>"Las rosas naturales pueden tardar de 5 meses o más en dar su primera flor. Y es porque antes de florecer, necesitan echar raíces, adaptarse, fortalecerse… crecer a su ritmo.</p>
+                <p>Quería darte algo real, algo que empezara desde cero y tuviera sentido. Como muchas cosas en la vida, lo bonito no se fuerza: se cuida, se espera y un día, simplemente, florece."</p>
+                <div class="emoji">🌱🌹</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p class="signature">Te amo Angel ❤️</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
